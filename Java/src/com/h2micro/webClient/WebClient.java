@@ -51,9 +51,9 @@ public class WebClient{
             wr.close();
 
             int responseCode = con.getResponseCode();
-            System.out.println("\nSending 'POST' request to URL : " + url);
-            System.out.println("Post parameters : " + urlParameters);
-            System.out.println("Response Code : " + responseCode);
+//            System.out.println("\nSending 'POST' request to URL : " + url);
+//            System.out.println("Post parameters : " + urlParameters);
+//            System.out.println("Response Code : " + responseCode);
 
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
@@ -68,7 +68,7 @@ public class WebClient{
         } catch (Exception e){
             e.printStackTrace();
         }
-        System.out.println("RESPONSE --------------------------" +response.toString());
+//        System.out.println("RESPONSE --------------------------" +response.toString());
         returnData = response.toString();
         return response.toString();
     }

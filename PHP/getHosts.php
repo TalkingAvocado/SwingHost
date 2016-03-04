@@ -7,7 +7,11 @@ $data = json_decode($inputData);
 
 $t = $data->data;
 
-echo "Result: ".$t;
+
+$returnObj = new stdClass();
+$returnObj->test = "Hello World";
+
+echo json_encode($returnObj);
 
 
 
